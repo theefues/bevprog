@@ -27,12 +27,12 @@ int main() {
 
 	cout << "Have you seen "<<friends_name<<" lately?\n"; //Harmadik sor kiírása a friends_name változóban tárolt értékkel
 
-	if( friends_sex == 'm') //Megvizsgáljuk a barát nemét a friends_sex változóban tárolt érték alapján
+	if (friends_sex == 'm') //Megvizsgáljuk a barát nemét a friends_sex változóban tárolt érték alapján
     		cout << "If you see "<<friends_name<<" please ask him to call me.\n"; //Ha az illető fiú, tehát a változó értéke m, ezt a sort írja ki
-	else if( friends_sex == 'f') 
+	else if (friends_sex == 'f') 
     		cout << "If you see "<<friends_name<<" please ask her to call me.\n"; //Ha az illető lány, tehát a változó értéke f, ezt a sort írja ki
 
-	if(age <= 0 || age >= 110 ) //Ha az age változóban tárolt érték kisebb egyenlő mint nulla, vagy nagyobb egyenlő mint 110, hibát kapunk
+	if (age <= 0 || age >= 110) //Ha az age változóban tárolt érték kisebb egyenlő mint nulla, vagy nagyobb egyenlő mint 110, hibát kapunk
   		simple_error("You're kidding!");
 	else 
     		cout << "I hear you just had a birthday and you are "<<age<<" years old.\nHappy birthday to you!\n\n"; //Ha az age változóban tárolt érték a fenti kritériumoknak megfelel, ezt a sort írjuk ki
