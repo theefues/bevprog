@@ -17,7 +17,7 @@ int main() {
 			return 0;
 		}
 		
-		cout << "Write a number: ";  //Szám bekérése
+		cout << "Write a number you want to convert into meter: ";  //Szám bekérése
 		cin >> a;
 
 		if ( unit == "cm" ) {  //Adott mértékegységnek megfelelő átváltás és beküldés a vektorba
