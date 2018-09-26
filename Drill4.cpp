@@ -9,9 +9,14 @@ int main() {
 	double smallest = 0;
 	vector <double> units;
 
-	while (a != '|') {  // Ciklus kezdete
-		cout << "\n\nWrite a unit (cm, m, ft, in): ";	//Unit bekérése
+	while (unit != "|") {  // Ciklus kezdete
+		cout << "\n\nWrite a unit (cm, m, ft, in or | to terminate): ";	//Unit bekérése
 		cin >> unit;
+		
+		if ( unit == "|") {
+			return 0;
+		}
+		
 		cout << "Write a number: ";  //Szám bekérése
 		cin >> a;
 
