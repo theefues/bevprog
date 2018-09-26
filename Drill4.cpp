@@ -4,8 +4,6 @@ using namespace std;
 int main() {
 	double a; // Változók felvétele
 	string unit;
-	double largest = 1;
-	double smallest = 0;
 	vector <double> units;
 
 	while (unit != "|") {  // Ciklus kezdete, ha a unit változó értéke |, a ciklus befejeződik és a program bezárul
