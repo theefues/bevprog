@@ -1,7 +1,7 @@
 #include "std_lib_facilities.h"
 
 int main() {
-
+	
 	double a;
 	double b;
 	cout << "Írj egy számot: ";
@@ -10,6 +10,7 @@ int main() {
 	cin >> b;
 
 	cout << "Megadott számok: "<< a <<" "<< b << '\n';
+	
 	a = a * b;
 	b = a / b;
 	a = a / b;
