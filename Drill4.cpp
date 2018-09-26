@@ -35,7 +35,12 @@ int main() {
 		else if ( unit == "in" ) {
 			a = a/39.37;
 			units.push_back(a);		
-		}	
+		} 
+		
+		else {
+			cout << "Invalid unit.\n\n";
+			return 0;		
+		}
 
 		sort(units); //Rendezés
 			cout << string(50, '\n'); //Szépítés
