@@ -9,11 +9,11 @@ int main() {
 	cout << "Írj egy másik számot: ";
 	cin >> b;
 
-	cout << "Megadott számok: "<< a <<" "<< b << '\n';
+	cout << "Megadott számok: " << a << " és " << b << '\n';
 	
 	a = a * b;
 	b = a / b;
 	a = a / b;
 
-	cout <<"Felcserélve: "<< a << " " << b << '\n';
+	cout << "Felcserélve: " << a << " és " << b << '\n';
 } 
