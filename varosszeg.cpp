@@ -1,6 +1,7 @@
 #include "std_lib_facilities.h"
 
 int main() {
+	
 	double a;
 	double b;
 	cout << "Adj meg egy számot: ";
