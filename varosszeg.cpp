@@ -8,7 +8,7 @@ int main() {
 	cout << "Adj meg egy másik számot: ";
 	cin >> b;
 
-	cout << "A két számod: " << a << " és " << b << '\n';
+	cout << "Megadott számok: " << a << " és " << b << '\n';
 
 	a=a+b;
 	b=a-b;
