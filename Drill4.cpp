@@ -9,15 +9,15 @@ int main() {
 	double smallest = 0;
 	vector <double> units;
 
-	while (unit != "|") {  // Ciklus kezdete
-		cout << "\n\nWrite a unit (cm, m, ft, in or | to terminate): ";	//Unit bekérése
+	while (unit != "|") {  // Ciklus kezdete, ha a unit változó értéke |, a ciklus befejeződik és a program bezárul
+		cout << "\n\nWrite a unit (cm, m, ft, in or | to terminate): ";	//Unit változó értékének bekérése
 		cin >> unit;
 		
 		if ( unit == "|") {
 			return 0;
 		}
 		
-		cout << "Write a number in " << unit << " you want to convert into meter: ";  //Szám bekérése
+		cout << "Write a number in " << unit << " you want to convert into meter: ";  //a, azaz a szám bekérése
 		cin >> a;
 
 		if ( unit == "cm" ) {  //Adott mértékegységnek megfelelő átváltás és beküldés a vektorba
@@ -38,18 +38,20 @@ int main() {
 		} 
 		
 		else {
-			cout << "Invalid unit.\n\n";
+			cout << "Invalid unit.\n\n"; //Ha nem a felsorolt egységek közül lett válaszva, hiba
 			return 0;		
 		}
 
 		sort(units); //Rendezés
 			cout << string(50, '\n'); //Szépítés
-			cout << "Smallest: " << units.front() << '\n'; //Adatok kiírása
-			cout << "Largest: " << units.back() << '\n';
+			cout << "Your number after exchange: " << a << '\n'; //Adatok kiírása
+			cout << "Smallest number so far: " << units.front() << '\n'; 
+			cout << "Largest number so far: " << units.back() << '\n';
 			cout << "Total numbers: " << units.size() << '\n';
 			cout << "Numbers in increasing order: ";
+		
 		for (int i = 0; i < units.size(); i++) {
-			cout << units[i] << ", ";
+			cout << units[i] << ", "; //Eddigi számok kiírása növekvő sorrendben, egymás után
 		}
 
 	}
