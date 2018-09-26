@@ -1,32 +1,45 @@
+
 #include "std_lib_facilities.h"
 using namespace std;
 
-int main() { //Változók felvétele
-	double a;
+int main() {
+	double a; // Változók felvétele
+	string unit;
 	double largest = 1;
 	double smallest = 0;
 	vector <double> units;
 
-	while (a != '|') { //Ciklus kezdete
-		cout << "\n\nWrite a number: ";	
+	while (a != '|') {  // Ciklus kezdete
+		cout << "\n\nWrite a unit (cm, m, ft, in): ";	//Unit bekérése
+		cin >> unit;
+		cout << "Write a number: ";  //Szám bekérése
 		cin >> a;
-		if ( a >= largest ) { //Változó felvétele vektorba
-    			largest = a;
+
+		if ( unit == "cm" ) {  //Adott mértékegységnek megfelelő átváltás és beküldés a vektorba
+    			a = a/100;
 			units.push_back(a);			   	
     		}
 		
-		else if ( a <= largest ) {
-		    	smallest = a;
+		else if ( unit == "m" ) {
 			units.push_back(a);		
 		}	
-		sort(units);
+		else if ( unit == "ft" ) {
+			a = a/3.28;
+			units.push_back(a);		
+		}	
+		else if ( unit == "in" ) {
+			a = a/39.37;
+			units.push_back(a);		
+		}	
+
+		sort(units); //Rendezés
 			cout << string(50, '\n'); //Szépítés
 			cout << "Smallest: " << units.front() << '\n'; //Adatok kiírása
 			cout << "Largest: " << units.back() << '\n';
 			cout << "Total numbers: " << units.size() << '\n';
 			cout << "Numbers in increasing order: ";
-		for (int s = 0; s < units.size(); s++) {
-			cout << units[s] << ", ";
+		for (int i = 0; i < units.size(); i++) {
+			cout << units[i] << ", ";
 		}
 
 	}
