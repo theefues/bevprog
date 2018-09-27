@@ -11,9 +11,9 @@ int main() {
 
 	cout << "Megadott számok: " << a << " és " << b << '\n';
 
-	a=a+b;
-	b=a-b;
-	a=a-b;
+	a = a+b;
+	b = a-b;
+	a = a-b;
 	
 	cout << "Felcserélés után: " << a << " és " << b << '\n'; 
 }
