@@ -9,7 +9,7 @@ int main() {
 	string first_name;		
 	cin >> first_name;
 
-	cout << "Tell me the name of another friend of mine: "; //Barát nevének bekérése
+	cout << "Tell me the name of another friend: "; //Barát nevének bekérése
 	string friends_name;		
 	cin >> friends_name;
 		
