@@ -2,7 +2,7 @@
 #include "std_lib_facilities.h"
 int main() {
  int s;
- cout << "Type 1: "
+ cout << "Type 1: ";
  cin >> s;
  if (s == 1) 
  cout << "Success!\n"; 
